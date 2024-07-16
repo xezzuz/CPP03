@@ -6,7 +6,7 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:27:02 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/26 19:51:54 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/11 16:44:30 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 ClapTrap::ClapTrap() {
 	name = "n\a";
-	hitPoints = 0;
-	energyPoints = 0;
+	hitPoints = 10;
+	energyPoints = 10;
 	attackDamage = 0;
 	std::cout << "ClapTrap Class Default Constructor Called\n";
 }

@@ -6,7 +6,7 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:26:53 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/27 13:30:08 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/11 16:44:21 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 class ClapTrap {
 	protected:
 		std::string			name;
-		int					hitPoints;		// HP
-		int					energyPoints;	// Stamina to Attack or Heal (Repair)
-		int					attackDamage;	// Weapon Damage
+		unsigned int		hitPoints;		// HP
+		unsigned int		energyPoints;	// Stamina to Attack or Heal (Repair)
+		unsigned int		attackDamage;	// Weapon Damage
 	public:
 		ClapTrap();
 		ClapTrap(std::string Name);

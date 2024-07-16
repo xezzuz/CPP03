@@ -6,7 +6,7 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:26:34 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/27 13:22:15 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/11 16:59:39 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,8 @@ int main() {
     fragtrap.takeDamage(20);
     fragtrap.attack("target3");
     fragtrap.beRepaired(10);
+
+    fragtrap.highFiveGuys();
+    
     return 0;
 }

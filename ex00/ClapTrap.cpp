@@ -6,13 +6,16 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:27:02 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/23 19:19:44 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/11 14:47:40 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap() {
+	hitPoints = 10;
+	energyPoints = 10;
+	attackDamage = 0;
 	std::cout << "Default Constructor Called\n";
 }
 
@@ -43,10 +46,8 @@ ClapTrap&	ClapTrap::operator=(const ClapTrap& original) {
 ClapTrap::~ClapTrap() {
 	std::cout << "ClapTrap " << name << " has been destroyed\n";
 }
-		
+
 void		ClapTrap::attack(const std::string& target) {
-	//	target HP -= attackDamage
-	//	this energyPoints--
 	if (!this->energyPoints || !this->hitPoints) {
 		std::cout << "ClapTrap " << this->name << " can't attack " << target << " because energyPoints = 0 or HP = 0 !\n";
 		return ;
@@ -56,7 +57,6 @@ void		ClapTrap::attack(const std::string& target) {
 }
 
 void		ClapTrap::takeDamage(unsigned int amount) {
-	//	this HP -= amount
 	if (!this->hitPoints)
 		std::cout << "ClapTrap " << this->name << " is already dead, he can't take any more damage!\n";
 	else if (amount >= this->hitPoints)
@@ -67,8 +67,6 @@ void		ClapTrap::takeDamage(unsigned int amount) {
 }
 
 void		ClapTrap::beRepaired(unsigned int amount) {
-	//	this HP += amount
-	//	this energyPoints--
 	if (!this->energyPoints || !this->hitPoints) {
 		std::cout << "ClapTrap " << this->name << " can't heal himself because energyPoints = 0 or HP = 0 !\n";
 		return ;

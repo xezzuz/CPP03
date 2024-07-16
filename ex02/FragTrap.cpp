@@ -6,7 +6,7 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 13:06:30 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/27 13:13:21 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/11 16:45:37 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 FragTrap::FragTrap() {
 	name = "n\a";
-	hitPoints = 0;
-	energyPoints = 0;
-	attackDamage = 0;
+	hitPoints = 100;
+	energyPoints = 100;
+	attackDamage = 30;
 	std::cout << "Derived Class Default Constructor Called\n";
 }
 

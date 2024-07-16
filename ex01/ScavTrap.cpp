@@ -6,7 +6,7 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/26 19:26:17 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/26 20:05:05 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/11 16:36:53 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 ScavTrap::ScavTrap() {
 	name = "n\a";
-	hitPoints = 0;
-	energyPoints = 0;
-	attackDamage = 0;
+	hitPoints = 100;
+	energyPoints = 50;
+	attackDamage = 20;
 	std::cout << "Derived Class Default Constructor Called\n";
 }
 

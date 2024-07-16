@@ -6,7 +6,7 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 15:48:41 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/28 10:56:02 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/11 18:38:48 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,9 @@ class D : public B, public C {
 		}
 		~D() {
 			std::cout << "D::Destructor Called => [" << this << "]\n";
+		}
+		void	whoAmI() {
+			std::cout << "I'm Class D\n";
 		}
 };
 
