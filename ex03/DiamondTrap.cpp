@@ -6,7 +6,7 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 13:38:40 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/28 11:11:09 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/18 12:23:22 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,18 @@
 DiamondTrap::DiamondTrap() {
 	name = "n\a";
 	ClapTrap::name = name + "_clap_name";
-	hitPoints = 0;
-	energyPoints = 0;
-	attackDamage = 0;
+	hitPoints = 100;
+	energyPoints = 50;
+	attackDamage = 30;
 	std::cout << "DiamondTrap Class Default Constructor Called\n";
 }
 
 DiamondTrap::DiamondTrap(std::string Name) {
 	name = Name;
 	ClapTrap::name = name + "_clap_name";
-	hitPoints = FragTrap::hitPoints;
-	energyPoints = ScavTrap::energyPoints;
-	attackDamage = FragTrap::attackDamage;
+	hitPoints = 100;
+	energyPoints = 50;
+	attackDamage = 30;
 	std::cout << "DiamondTrap " << name << " has been created\n";
 }
 

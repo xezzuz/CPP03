@@ -6,7 +6,7 @@
 /*   By: nazouz <nazouz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 17:26:34 by nazouz            #+#    #+#             */
-/*   Updated: 2024/05/28 11:11:23 by nazouz           ###   ########.fr       */
+/*   Updated: 2024/07/18 16:18:43 by nazouz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 int main() {
     DiamondTrap     diamondtrap("Diamonda");
 
-    // diamondtrap.highFiveGuys();
-    // diamondtrap.whoAmI();
     diamondtrap.attack("target1");
     diamondtrap.takeDamage(3);
     diamondtrap.beRepaired(5);
@@ -27,5 +25,10 @@ int main() {
     diamondtrap.takeDamage(20);
     diamondtrap.attack("target3");
     diamondtrap.beRepaired(10);
+
+    diamondtrap.whoAmI();
+    diamondtrap.guardGate();
+    diamondtrap.highFiveGuys();
+
     return 0;
 }
